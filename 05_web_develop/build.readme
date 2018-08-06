@@ -1,0 +1,36 @@
+npm 설치및 확인
+{
+    npm --version
+    
+    npm install browserify
+    browserify --version
+
+    npm install babel-cli
+    babel --version
+    
+    npm install --save-dev react
+    npm install --save-dev react-dom
+    npm install --save-dev babel-preset-react
+    npm install --save-dev babel-preset-es2015
+
+    npm install --save-dev npm-watch
+
+
+    bash
+    cd /mnt/e/[project]/react/
+}
+
+js 패키징 및 배포관련
+{
+    #js 트랜스폼
+    babel --presets react,es2015 js/source -d js/build
+
+    #js 패키징
+    browserify js/build/app.js -o bundle.js
+
+    #css 패키징
+    type css\components\* css\* > bundle.css
+
+    #완료
+    date; echo;
+}
