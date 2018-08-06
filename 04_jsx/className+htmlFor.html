@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>React</title>
+</head>
+<body>
+
+  <div id="app">
+    <!-- 앱이 렌더링되는 위치 -->
+  </div>
+
+
+
+<script src="/js/jquery-3.3.1.min.js"></script>
+<script src="/js/react.js"></script>
+<script src="/js/react-dom.js"></script>
+<script src="/js/lib/browser.js"></script>
+
+<script type="text/babel">
+    var em = <em className="importnat"/>;
+    var label = <label htmlFor="thatInput"/>
+    var styles = {
+        fontSize: '2em',
+        lineHeight: '1.6'
+    }
+    var em = <em style={styles}/>
+    var em = <em style={{fontSize: '2em', lineHeight: '1.6'}}/>
+    var a = <a onClick={reticulateSplines} />
+
+    var Example = React.createClass({
+        render: function () {
+            console.log(this.props.children.length);
+            return (
+                <div>
+                    {this.props.children}
+                </div>
+            )
+        }
+    });
+    React.render(
+        <Example>
+            <span key="greet">Hello</span>
+            {' '}
+            <span key="world">World</span>
+            !
+        </Example>,
+        document.getElementById('app')
+    );
+</script>
+</body>
+</html>

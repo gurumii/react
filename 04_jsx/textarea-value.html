@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>React</title>
+</head>
+<body>
+
+  <div id="app">
+    <!-- 앱이 렌더링되는 위치 -->
+  </div>
+
+  <div id="app2"/>
+  <div id="app3"/>
+  <div id="app4"/>
+
+
+
+<script src="/js/jquery-3.3.1.min.js"></script>
+<script src="/js/react.js"></script>
+<script src="/js/react-dom.js"></script>
+<script src="/js/lib/browser.js"></script>
+
+<script type="text/babel">
+    function log(event){
+        console.log("value: ", event.target.value);
+        console.log("defaultValue: ", event.target.defaultValue);
+    }
+
+    ReactDOM.render(
+        <textarea defaultValue="hello\nworld" onChange={log}/>,
+        document.getElementById('app')
+    );
+    ReactDOM.render(
+        <textarea defaultValue={"hello\nworld"} onChange={log}/>,
+        document.getElementById('app2')
+    );//*/
+    ReactDOM.render(
+        <textarea onChange={log}>hello 
+        world
+        </textarea>,
+        document.getElementById('app3')
+    );//*/
+    ReactDOM.render(
+        <textarea onChange={log}>{"hello\n world"}</textarea>,
+        document.getElementById('app4')
+    );//*/
+</script>
+</body>
+</html>
