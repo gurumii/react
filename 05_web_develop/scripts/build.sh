@@ -1,3 +1,5 @@
+E:\[PROJECT]\react\05_web_develop
+
 #cd /mnt/e/[project]/react/05_web_develop
 
 #js 트랜스폼

@@ -1,5 +1,5 @@
 .Logo{
-    background-image: url('../../images/react-logo.svg');
+    background-image: url('/05_web_develop/images/react-logo.svg');
     background-size: cover;
     display: inline-block;
     width: 50px;
