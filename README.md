@@ -1,4 +1,4 @@
-# gulp
+# gulp -fail
 
 1. copy con gulpfile.js<br/>
 2. write this<br/>
