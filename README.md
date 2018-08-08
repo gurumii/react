@@ -1,5 +1,6 @@
 # gulp
 
+//copy con gulpfile.js
 gulp.task('js', () => {<br/>
     console.log(SRC.JS, DEST.JS);<br/>
     return gulp.src(SRC.JS)<br/>
@@ -7,6 +8,7 @@ gulp.task('js', () => {<br/>
            .pipe(debug())<br/>
            .pipe(gulp.dest(DEST.JS));<br/>
 });<br/><br/>
+gulp js<br/>
 
 <br/><br/>
 # webpack<br/>
