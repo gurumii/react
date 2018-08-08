@@ -1,19 +1,19 @@
 # react
 
-#webpack
-npm i webpack -g
+#webpack<br/>
+npm i webpack -g<br/><br/>
 
-npm init -y
+npm init -y<br/>
 
-webpack app/index.js dist/bundle.js --mode development
+webpack app/index.js dist/bundle.js --mode development<br/>
 
-//copy con webpack.config.js
-var path = require('path');
-module.exports = {
-  entry: './app/index.js',
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
-  },
-  mode: 'development'
-};
+//copy con webpack.config.js<br/>
+var path = require('path');<br/>
+module.exports = {<br/>
+  entry: './app/index.js',<br/>
+  output: {<br/>
+    filename: 'bundle.js',<br/>
+    path: path.resolve(__dirname, 'dist')<br/>
+  },<br/>
+  mode: 'development'<br/>
+};<br/>
